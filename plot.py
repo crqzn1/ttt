@@ -9,9 +9,11 @@ Created on Tue Mar 17 15:52:05 2020
 import matplotlib.pyplot as plt
 fig=plt.figure(figsize=(10,4))
 plt.subplot(1,2,1)
-plt.plot([0,0.5,1],[1,0,1])
+plt.plot([0,0.5,1],[1,0,1],linestyle='-',label='line#1')
+plt.legend(loc='upper center',frameon=True)
 plt.subplot(1,2,2)
-plt.plot([0,0.5,1],[0.0,0.8,1])
+plt.plot([0,0.5,1],[0.0,0.8,1],linewidth=4,label='line#2')
+plt.legend(loc='upper center',frameon=True)
 plt.show()
 
 import matplotlib.pyplot as plt
